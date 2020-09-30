@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 body {
   margin: 0px;
@@ -46,6 +46,7 @@ h1 {
   line-height: 16px;
   width:375px;
   float: left;
+  font-weight: lighter;
 }
 
 #header {
@@ -57,7 +58,7 @@ h1 {
   margin-top: 5px;
   font-size: 12px;
   text-align: right;
-  line-height: 16px;
+  line-height: 10px;
 }
 
 .button {
@@ -70,4 +71,8 @@ h1 {
   display: inline-block;
   font-size: 16px;
   border-radius: 4px;
+}
+
+.ui-widget-header {
+  color: purple;
 }
