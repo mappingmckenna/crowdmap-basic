@@ -93,7 +93,7 @@
 			$.getJSON(getData, function (data) {
 				cartoDBData = L.geoJson(data, {
 					onEachFeature: function (feature, layer) {
-						layer.bindPopup('' + feature.properties.description + '<br>Submitted by ' + feature.properties.name + '');
+						layer.bindPopup('' + feature.properties.description + '<br>' + feature.properties.name + '');
 					}
 				}).addTo(map);
 			});
