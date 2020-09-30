@@ -16,20 +16,21 @@ p {
 }
 
 h1 {
-  line-height: 60px;
+  line-height: 40px;
   margin-top: 0px;
   margin-bottom: 0px;
   font-weight: lighter;
+  color: purple;
 }
 
 #wrapper {
-  width: 750px;
+  width: 100%;
 }
 
 #map {
-  width: 750px;
+  width: 100%;
   margin: 0 auto;
-  height: 375px;
+  height: 600px;
 }
 
 #controls {
