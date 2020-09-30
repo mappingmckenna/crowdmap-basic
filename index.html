@@ -11,25 +11,25 @@
   <body>
     <div id="wrapper">
       <div id="header">
-        <h1>Leaflet Draw  Collection Tool</h1>
+        <h1>Our Data Map</h1>
       </div>
       <div id="map"></div>
       <div id="controls">
         <p>Click points for more information, or add your own.</br></p>
         <input type="button" onclick="startEdits()" value="Click to Start Editing">
-        <input type="button" onclick="stopEdits()" value="Stop Your Editing Session"><br>
-        <div id="credits"><p>&copy;2015, Mike Foster and Raphael Dumas</p></div>
+        <input type="button" onclick="stopEdits()" value="Stop Editing"><br>
+        <div id="credits"><p>&copy;Taken from Mike Foster and Raphael Dumas</p></div>
       </div>
     </div>
 
-    <div id="dialog" title="Tell us About this Drawing">     
+    <div id="dialog" title="Tell us About it">     
       <form>
         <fieldset style="border: none;">
           <ul style="list-style-type: none; padding-left: 0px">
-            <li><label for="username">Your Name</label></li>
-            <li><input type="text" name="username" id="username" placeholder="Enter your name" class="text ui-widget-content ui-corner-all"></li>
-            <li><label for="description">About this</label></li>
-            <li><input type="text" name="description" id="description" placeholder="Description for this point" class="text ui-widget-content ui-corner-all"></li>
+            <li><label for="username">The place</label></li>
+            <li><input type="text" name="username" id="username" placeholder="Enter the place name" class="text ui-widget-content ui-corner-all"></li>
+            <li><label for="description">Why is this place special to you</label></li>
+            <li><input type="text" name="description" id="description" placeholder="Description for this place, ie born here, ie d" class="text ui-widget-content ui-corner-all"></li>
           </ul>
           <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
         </fieldset>
@@ -47,7 +47,7 @@
 			cartoDBusername : "mappingmckenna",
 			cartoDBinsertfunction : "insert_crowd_mapping_data",
 			cartoDBtablename : "crowdmap_basic",
-			mapcenter: [42.381899, -71.122499],
+			mapcenter: [-25.274398, 133.775136],
 			drawOptions: {
 				draw : {
 					polygon : false,
@@ -75,7 +75,7 @@
 
 
 		// Create Leaflet map object
-		var map = L.map('map', { center: config.mapcenter, zoom: 13});
+		var map = L.map('map', { center: config.mapcenter, zoom: 4});
 		// Add Tile Layer basemap
 		// Find your own at https://leaflet-extras.github.io/leaflet-providers/preview/
 		var CartoDB_Positron = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
