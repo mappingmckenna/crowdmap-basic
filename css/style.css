@@ -61,7 +61,7 @@ h1 {
   line-height: 10px;
 }
 
-.button {
+input[type="button"] {
   background-color: purple; 
   border: none;
   color: white;
